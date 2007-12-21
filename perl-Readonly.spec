@@ -15,6 +15,7 @@ Url:		http://search.cpan.org/dist/%{module}
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
