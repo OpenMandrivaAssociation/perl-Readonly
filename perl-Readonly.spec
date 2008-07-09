@@ -1,7 +1,7 @@
 %define	module	Readonly
 %define	name	perl-%{module}
 %define version 1.03
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}
@@ -15,7 +15,7 @@ Url:		http://search.cpan.org/dist/%{module}
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
