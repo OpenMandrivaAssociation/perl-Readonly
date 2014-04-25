@@ -42,7 +42,7 @@ module Readonly::XS. See the "CONS" section below for more details.
 ./Build install destdir=%{buildroot}
 
 %files 
-%doc Changes README
+%doc Changes 
 %{perl_vendorlib}/Readonly.pm
 %{perl_vendorlib}/benchmark.pl
 %{_mandir}/man3/*
