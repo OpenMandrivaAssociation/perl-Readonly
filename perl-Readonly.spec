@@ -12,6 +12,7 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRequires: perl(Module::Build)
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
