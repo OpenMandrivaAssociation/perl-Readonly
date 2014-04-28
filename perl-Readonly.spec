@@ -44,10 +44,9 @@ module Readonly::XS. See the "CONS" section below for more details.
 %files 
 %doc Changes 
 %{perl_vendorlib}/Readonly.pm
-# %{perl_vendorlib}/benchmark.pl
 %{_mandir}/man3/*
-# %{perl_vendorlib}Readonly/Array.pm
-# %{perl_vendorlib}Readonly/Hash.pm
-# %{perl_vendorlib}Readonly/Scalar.pm
+%{perl_vendorlib}/Readonly/Array.pm
+%{perl_vendorlib}/Readonly/Hash.pm
+%{perl_vendorlib}/Readonly/Scalar.pm
 
 
