@@ -1,11 +1,11 @@
 %define	modname	Readonly
-%define modver 1.04
+%define modver 2.00
 
 Summary:	Facility for creating read-only scalars, arrays, hashes
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -48,5 +48,3 @@ module Readonly::XS. See the "CONS" section below for more details.
 %{perl_vendorlib}/Readonly/Array.pm
 %{perl_vendorlib}/Readonly/Hash.pm
 %{perl_vendorlib}/Readonly/Scalar.pm
-
-
