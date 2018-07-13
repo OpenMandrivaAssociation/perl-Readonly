@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(CPAN::Meta)
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
 
