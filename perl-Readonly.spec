@@ -15,6 +15,7 @@ BuildRequires:	perl(CPAN::Meta)
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(ExtUtils::CBuilder)
+BuildRequires: perl(Test::More)
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
