@@ -14,6 +14,7 @@ BuildArch:	noarch
 BuildRequires:	perl(CPAN::Meta)
 BuildRequires:	perl-devel
 BuildRequires: perl(Module::Build)
+BuildRequires: perl(ExtUtils::CBuilder)
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
