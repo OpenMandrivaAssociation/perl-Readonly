@@ -1,21 +1,20 @@
 %define	modname	Readonly
-%define modver 2.00
 
 Summary:	Facility for creating read-only scalars, arrays, hashes
-
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
+Version:	2.05
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{modver}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/%{modname}/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(CPAN::Meta)
 BuildRequires:	perl-devel
-BuildRequires: perl(Module::Build)
-BuildRequires: perl(ExtUtils::CBuilder)
-BuildRequires: perl(Test::More)
+BuildRequires:	perl(Module::Build)
+BuildRequires:	perl(Module::Build::Tiny)
+BuildRequires:	perl(ExtUtils::CBuilder)
+BuildRequires:	perl(Test::More)
 
 %description
 This is a facility for creating non-modifiable variables. This is useful for
@@ -32,17 +31,17 @@ Please note that most users of Readonly will also want to install a companion
 module Readonly::XS. See the "CONS" section below for more details.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%setup -qn %{modname}-%{version}
+perl Build.PL --installdirs=vendor
 
 %build
-%__perl Build.PL installdirs=vendor
 ./Build
 
 %check
 ./Build test
 
 %install
-./Build install destdir=%{buildroot}
+./Build install --destdir=%{buildroot}
 
 %files 
 %doc Changes 
